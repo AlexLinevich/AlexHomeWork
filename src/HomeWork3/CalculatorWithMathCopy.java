@@ -10,7 +10,7 @@ package HomeWork3;
  * Модуль числа, Корень из числа).
  * Данные методы должны содержать в своём теле вызов библиотеки Math и возврат полученного результата.
  */
-public class CalculatorWithMathCopy {
+public class CalculatorWithMathCopy implements ICalculator{
 
     public double addition(double value1, double value2) {
         return value1 + value2;

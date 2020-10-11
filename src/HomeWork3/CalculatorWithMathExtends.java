@@ -12,7 +12,7 @@ package HomeWork3;
  * Данные методы должны ПЕРЕОПРЕДЕЛЯТЬ методы родительского класса и должны содержать
  * в своём теле вызов библиотеки Math и возврат полученного результата .
  */
-public class CalculatorWithMathExtends extends CalculatorWithOperator {
+public class CalculatorWithMathExtends extends CalculatorWithOperator implements ICalculator {
 
     @Override
     public double myPow(double value1, int value2) {

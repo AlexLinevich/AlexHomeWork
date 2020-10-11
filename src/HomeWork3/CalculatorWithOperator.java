@@ -13,7 +13,7 @@ package HomeWork3;
  * 2.3 В методах можно использовать любые арифметические операты.
  * 2.4 Использование библиотеки Math ЗАПРЕЩЕНО! (кроме извлечения корня).
  */
-public class CalculatorWithOperator {
+public class CalculatorWithOperator implements ICalculator{
 
     public double addition(double value1, double value2) {
         return value1 + value2;
