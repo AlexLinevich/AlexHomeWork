@@ -19,5 +19,6 @@ public class CalculatorWithCounterMain {
         double result = calculator.addition(result4, 4.1);
 
         System.out.println("4.1 + 15 * 7 + (28 / 5) ^ 2 = " + result);
+        System.out.println("Количество использований калькулятора: " + calculator.getCountOperations());
     }
 }

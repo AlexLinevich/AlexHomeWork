@@ -17,51 +17,55 @@ package HomeWork3;
  */
 public class CalculatorWithCounter {
 
-    private long countOperations;
+    private long countOperations = 0;
     private CalculatorWithOperator calculator;
     private CalculatorWithMathCopy calculator1;
     private CalculatorWithMathExtends calculator2;
 
     public CalculatorWithCounter(CalculatorWithOperator calculator) {
         this.calculator = calculator;
-        countOperations++;
     }
 
     public CalculatorWithCounter(CalculatorWithMathCopy calculator) {
         this.calculator1 = calculator;
-        countOperations++;
     }
 
     public CalculatorWithCounter(CalculatorWithMathExtends calculator) {
         this.calculator2 = calculator;
-        countOperations++;
     }
 
     public double addition(double value1, double value2) {
+        countOperations++;
         return calculator.addition(value1, value2);
     }
 
     public double subtraction(double value1, double value2) {
+        countOperations++;
         return calculator.subtraction(value1, value2);
     }
 
     public double multiplying(double value1, double value2) {
+        countOperations++;
         return calculator.multiplying(value1, value2);
     }
 
     public double dividing(double value1, double value2) {
+        countOperations++;
         return calculator.dividing(value1, value2);
     }
 
     public double myPow(double value1, int value2) {
+        countOperations++;
         return calculator.myPow(value1, value2);
     }
 
     public double absolute(double value) {
+        countOperations++;
         return calculator.absolute(value);
     }
 
     public double mySqrt(double value) {
+        countOperations++;
         return calculator.mySqrt(value);
     }
 
