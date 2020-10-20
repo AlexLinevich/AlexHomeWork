@@ -1,11 +1,10 @@
 package HomeWork4;
 
 import java.util.Arrays;
-import java.util.Comparator;
 
 public class DataContainer<T> {
 
-    private T[] data;
+    public T[] data;
 
     public DataContainer(T[] data) {
         this.data = data;
@@ -67,9 +66,17 @@ public class DataContainer<T> {
         return false;
     }
 
-    // public void sort(Comparator<T[]> comparator) {
-    //     this.data = Arrays.sort();
-    // }
+    public void sort(MyComparator<T> comparator) {
+        for (int i = 0; i < data.length - 1; i++) {
+            for (int j = i + 1; j < data.length; j++) {
+                if (comparator.compare(data[i], data[j]) > 0) {
+                    T temp = data[i];
+                    data[i] = data[j];
+                    data[j] = temp;
+                }
+            }
+        }
+    }
 
     @Override
     public String toString() {
@@ -78,4 +85,5 @@ public class DataContainer<T> {
         }
         return Arrays.toString(data);
     }
+
 }

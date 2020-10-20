@@ -41,5 +41,8 @@ public class DataContainerMain {
         System.out.println("Результат удаления объекта " + item + ": " + ds3.delete(item));
         System.out.println("Новый массив: " + Arrays.toString(ds3.getItems()));
         System.out.println(ds3.toString());
+
+        ds3.sort(new MyComparator<>());
+        System.out.println("Новый массив после сортировки: " + Arrays.toString(ds3.getItems()));
     }
 }
