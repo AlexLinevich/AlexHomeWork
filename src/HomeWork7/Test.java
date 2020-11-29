@@ -24,10 +24,10 @@ public class Test {
         Scanner in = new Scanner(System.in);
         System.out.println();
         System.out.print("Введите путь к сохраняемому файлу Currency.txt: ");
-        pathName = in.next();
+        pathName = in.nextLine();
         Path path = Paths.get(pathName);
         if (Files.exists(path)) {
-            pathName = pathName + "Currency.txt";
+            pathName = pathName + "\\Currency.txt";
         } else {
             System.out.println("Папки " + pathName + " не существует");
             System.out.println("файл Currency.txt будет создан в папке HomeWork\\src\\");
